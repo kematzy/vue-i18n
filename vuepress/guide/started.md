@@ -59,3 +59,17 @@ Output the following:
   <p>こんにちは、世界</p>
 </div>
 ```
+
+## Within a component
+
+You can also use i18n within the JavaScript part of Vue component, by using `this.$t(...)`.
+
+```js
+new Vue({
+  methods: {
+    getMessage: function (key) {
+      return this.$t(key)
+    }
+  }
+})
+```
